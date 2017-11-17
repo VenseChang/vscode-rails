@@ -1,0 +1,82 @@
+{
+    "name": "rails-snippets",
+    "displayName": "Rails Snippets",
+    "description": "Ruby on Rails Snippets",
+    "version": "0.0.1",
+    "publisher": "Vense",
+    "engines": {
+        "vscode": "^1.18.0"
+    },
+    "categories": [
+        "Snippets",
+        "Other"
+    ],
+	"keywords": [
+		"rails",
+		"ROR",
+		"RoR",
+		"Ruby on Rails",
+		".erb"
+	],
+    "contributes": {
+        "snippets":[
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/html.json"
+			},
+			{
+				"language": "css",
+				"path": "./snippets/css.json"
+			},
+			{
+				"language": "scss",
+				"path": "./snippets/scss.json"
+			},
+			{
+				"language": "ruby",
+				"path": "./snippets/ruby.json"
+			}
+		],
+		"languages": [
+			{
+				"id": "html",
+				"aliases": [
+					"html.erb"
+				],
+				"extensions": [
+					".html.erb",
+					".rhtml",
+					".rhtm"
+				]
+			},
+			{
+				"id": "javascript",
+				"aliases": [
+					"js.erb"
+				],
+				"extensions": [
+					".js.erb"
+				]
+			},
+			{
+				"id": "css",
+				"aliases": [
+					"css.erb"
+				],
+				"extensions": [
+					".css.erb"
+				]
+			},
+			{
+				"id": "scss",
+				"extensions": [
+					".scss"
+				]
+			}
+		]
+    }
+}
