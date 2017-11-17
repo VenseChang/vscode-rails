@@ -48,9 +48,7 @@
 					"html.erb"
 				],
 				"extensions": [
-					".html.erb",
-					".rhtml",
-					".rhtm"
+					".html.erb"
 				]
 			},
 			{

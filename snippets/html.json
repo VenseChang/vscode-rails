@@ -1,1 +1,154 @@
-{}
+{
+  "ruby-expression(<% %>)":{
+    "prefix":"pr",
+		"body":[
+      "<% $1 %>"
+    ],
+    "description": "rails expression(<% %>)"
+  },
+  "ruby-expression(<%= %>)":{
+    "prefix":"pr-e",
+    "body":[
+      "<%= $1 %>"
+    ],
+    "description": "rails expression(<%= %>)"
+	},
+	"form_for":{
+		"prefix": "form_for",
+		"body": [
+			"<%= form_for ${variable} do |f| %>",
+			  "$2",
+			"<% end %>"
+		],
+		"description": "rails form_for"
+	},
+	"simple_form_for":{
+		"prefix": "simple_form_for",
+		"body": [
+			"<%= simple_form_for ${variable} do |f| %>",
+			  "$2",
+			"<% end %>"
+		],
+		"description": "rails simple_form_for"
+  },
+  "time_zone_select":{
+		"prefix": "time_zone_select",
+		"body": [
+			"<%= f.time_zone_select :${id_name} %>"
+		],
+		"description": "rails time_zone_select"
+  },
+	"range_field":{
+		"prefix": "range_field",
+		"body": [
+			"<%= range_field (:${model_name}, :${id_name}, in: ${1..100}) %>"
+		],
+		"description": "rails range_field"
+	},
+	"select_tag":{
+		"prefix": "select_tag",
+		"body": [
+			"<%= select_tag (:${id_name}, options_for_select(${options})) %>"
+		],
+		"description": "rails select_tag"
+  },
+  "color_field":{
+		"prefix": "color_field",
+		"body": [
+			"<%= color_field :${id_name} %>"
+		],
+		"description": "rails color_field"
+	},
+	"options_for_select":{
+		"prefix": "options_for_select",
+		"body": [
+			" options_for_select([${options}]) "
+		],
+		"description": "rails options_for_select,options example:[['Lisbon', 1], ['Madrid', 2], ...], 2"
+	},
+  "number_field":{
+		"prefix": "f.number_field",
+		"body": [
+			"<%= f.number_field (:${id_name}, in: ${1.0..20.0}, step: ${0.5}) %>"
+		],
+		"description": "rails number_field"
+  },
+  "time_field":{
+		"prefix": "f.time_field",
+		"body": [
+			"<%= f.time_field :${id_name} %>"
+		],
+		"description": "rails time_field"
+	},
+  "hidden_field":{
+		"prefix": "f.hidden_field",
+		"body": [
+			"<%= f.hidden_field :${id_name} %>"
+		],
+		"description": "rails hidden_field"
+  },
+	"email_field":{
+		"prefix": "f.email_field",
+		"body": [
+			"<%= f.email_field :${id_name} %>"
+		],
+		"description": "rails email_field"
+	},
+	"url_field":{
+		"prefix": "f.url_field",
+		"body": [
+			"<%= f.url_field :${id_name} %>"
+		],
+		"description": "rails url_field"
+	},
+	"password_field":{
+		"prefix": "f.password_field",
+		"body": [
+			"<%= f.password_field :${id_name} %>"
+		],
+		"description": "rails password_field"
+	},
+	"text_area":{
+		"prefix": "f.text_area",
+		"body": [
+			"<%= f.text_area :${id_name} %>"
+		],
+		"description": "rails text_area"
+  },
+  
+	"check_box":{
+		"prefix": "f.check_box",
+		"body": [
+			"<%= f.check_box :${id_name} %>"
+		],
+		"description": "rails check_box"
+	},
+	"text_field":{
+		"prefix": "f.text_field",
+		"body": [
+			"<%= f.text_field :${id_name} %>"
+		],
+		"description": "rails text_field"
+	},
+	"radio_button":{
+		"prefix": "f.radio_button",
+		"body": [
+			"<%= f.radio_button :${name}, :value => \"${value}\" %>"
+		],
+		"description": "rails radio_button,id will be ${name}_${value}"
+	},
+	"render":{
+		"prefix": "render",
+		"body": [
+			"<%= render  \"${path}\" %>"
+		],
+		"description": "rails render"
+	},
+	"link_to":{
+		"prefix": "link_to",
+		"body": [
+			"<%= link_to  \"${text}\", ${path} %>"
+		],
+		"description": "rails link_to"
+	}
+}

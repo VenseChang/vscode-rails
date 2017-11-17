@@ -1,1 +1,164 @@
-{}
+{
+  "has_one": {
+		"prefix": "has_one",
+		"body": "has_one :",
+		"description": "has_one :",
+		"scope": "source.ruby.rails"
+	},
+	"belongs_to": {
+		"prefix": "belongs_to",
+		"body": "belongs_to :",
+		"description": "belongs_to :",
+		"scope": "source.ruby.rails"
+  },
+  "resources": {
+		"prefix": "res",
+		"body": "resources :${res_name}",
+		"description": "resources without a custom collection block",
+		"scope": "meta.rails.routes"
+  },
+	"resources_only": {
+		"prefix": "res_only",
+		"body": "resources :${res_name}, only: [:${index}]",
+		"description": "resources :name, only: [:actions]",
+		"scope": "meta.rails.routes"
+	},
+	"resources_block": {
+		"prefix": "res_block",
+		"body": "resources :${res_name} do\n  $2\nend",
+		"description": "resources with an empty params block",
+		"scope": "meta.rails.routes"
+	},
+	"resources_collection": {
+		"prefix": "res_collection_block",
+		"body": "resources :${res_name} do\n  collection do\n    ${2:get} :${3:action}\n  end\nend",
+		"description": "resources with a custom collection block",
+		"scope": "meta.rails.routes"
+	},
+	"resources_member": {
+		"prefix": "res_member_block",
+		"body": "resources :${res_name} do\n  member do\n    ${2:get} :${3:action}\n  end\nend",
+		"description": "resources with a custom member block",
+		"scope": "meta.rails.routes"
+	},
+  "resource": {
+		"prefix": "re",
+		"body": "resource :${res_name}",
+		"description": "resource without a custom collection block",
+		"scope": "meta.rails.routes"
+	},
+	"resource_only": {
+		"prefix": "re_only",
+		"body": "resource :${res_name}, only: [:${index}]",
+		"description": "resource :name, only: [:actions]",
+		"scope": "meta.rails.routes"
+	},
+	"resource_block": {
+		"prefix": "re_block",
+		"body": " :${res_name} do\n  $2\nend",
+		"description": "resource with an empty params block",
+		"scope": "meta.rails.routes"
+	},
+	"resource_collection": {
+		"prefix": "re_collection_block",
+		"body": "resource :${res_name} do\n  collection do\n    ${2:get} :${3:action}\n  end\nend",
+		"description": "resource with a custom collection block",
+		"scope": "meta.rails.routes"
+	},
+	"resource_member": {
+		"prefix": "re_member_block",
+		"body": "resource :${res_name} do\n  member do\n    ${2:get} :${3:action}\n  end\nend",
+		"description": "resource with a custom member block",
+		"scope": "meta.rails.routes"
+	},
+	"redirect_to": {
+		"prefix": "redirect_to",
+		"body": "redirect_to ${path}",
+		"description": "redirect_to path ",
+		"scope": "source.ruby.rails"
+	},
+	"redirect_to_msg": {
+		"prefix": "redirect_to_msg",
+		"body": "redirect_to ${path}, notice: \"${msg}\"",
+		"description": "redirect_to path, notice: msg",
+		"scope": "source.ruby.rails"
+	},
+	"t.binary": {
+		"prefix": "t.binary",
+		"body": "t.binary :",
+		"description": "Table column binary",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"t.boolean": {
+		"prefix": "t.boolean",
+		"body": "t.boolean :",
+		"description": "Table column boolean",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"t.date": {
+		"prefix": "t.date",
+		"body": "t.date :",
+		"description": "Table column date",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"t.datetime": {
+		"prefix": "t.datetime",
+		"body": "t.datetime :",
+		"description": "Table column datetime",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"t.decimal": {
+		"prefix": "t.decimal",
+		"body": "t.decimal :",
+		"description": "Table column decimal",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"t.float": {
+		"prefix": "t.float",
+		"body": "t.float :${1:title}\n$0",
+		"description": "Table column float",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"t.integer": {
+		"prefix": "t.integer",
+		"body": "t.integer :",
+		"description": "Table column integer",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"t.references": {
+		"prefix": "t.references",
+		"body": "t.references :",
+		"description": "Table column(s) references",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"t.string": {
+		"prefix": "t.string",
+		"body": "t.string :",
+		"description": "Table column string",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"t.text": {
+		"prefix": "t.text",
+		"body": "t.text :",
+		"description": "Table column text",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"t.time": {
+		"prefix": "t.time",
+		"body": "t.time :",
+		"description": "Table column time",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"t.timestamp": {
+		"prefix": "t.timestamp",
+		"body": "t.timestamp :",
+		"description": "Table column timestamp",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"t.timestamps": {
+		"prefix": "t.timestamps",
+		"body": "t.timestamps\n$0",
+		"description": "Table column timestamps",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	}
+}
