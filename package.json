@@ -2,11 +2,20 @@
     "name": "rails-snippets",
     "displayName": "Rails Snippets",
     "description": "Ruby on Rails Snippets",
-    "version": "0.1.0",
+    "version": "0.1.1",
+	"icon": "rails.png",
     "publisher": "Vense",
     "engines": {
         "vscode": "^1.18.0"
     },
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Drunces/vscode-rails.git"
+	},
+	"homepage": "https://github.com/Drunces/vscode-rails",
+	"bugs": {
+		"url": "https://github.com/Drunces/vscode-rails/issues"
+	},
     "categories": [
         "Snippets",
         "Other"
