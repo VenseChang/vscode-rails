@@ -1,16 +1,14 @@
-# Rails 
-Ruby on Rails Snippets  
+# Rails Snippets 
 
-## Release Notes
-### 0.2.1
-Add Ruby snippets(require and permit)
-### 0.2.0
-Add grammars
-### 0.1.0
-Add Ruby and html(html.erb) Snippets
-### 0.0.1
-Initial release of vscode-extension rails
+***If have any advice,can through [Github](https://github.com/Drunces/vscode-rails) to tell me.***
 
-## [Github](https://github.com/Drunces/vscode-rails)
+# Snippets
+- [Rails](https://hackmd.io/AwZhE4FMFYA5gLQEMQHZYICwDNqQQEaqSoLwDG05kATLAGw0HhA=)
+- [Ruby](https://hackmd.io/EwNgpgxghgzGBmBaArATgAzsQFhPJqUAjFIugOwzIAm5R51mMQA=)
+
+# Link
+- [Github](https://github.com/Drunces/vscode-rails)
+- [Marketplace](https://marketplace.visualstudio.com/items?itemName=Vense.rails-snippets)
+
 ---
-## Enjoy!
+### Enjoy it!

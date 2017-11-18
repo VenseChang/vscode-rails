@@ -1,9 +1,11 @@
-# Version Log
-## 0.2.1
-Add Ruby snippets(require and permit)
-## 0.2.0
-Add grammars
-## 0.1.0
-Add Ruby and html(html.erb) Snippets
-## 0.0.1
-Initial release of vscode-extension rails
+# Change log
+### 0.2.2
+- Update Detail and Changelog, add link and snippets doc
+### 0.2.1
+- Add Ruby snippets(require and permit)
+### 0.2.0
+- Add grammars which taken from https://github.com/craigmaslowski/vscode-erb
+### 0.1.0
+- Add Ruby and html(html.erb) Snippets
+### 0.0.1
+- Initial release of vscode-extension rails

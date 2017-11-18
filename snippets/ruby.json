@@ -10,6 +10,36 @@
 		"body": "belongs_to :",
 		"description": "belongs_to :",
 		"scope": "source.ruby.rails"
+	},
+	"route_Get": {
+		"prefix": "get",
+		"body": "get \"/$1\", to: \"$2#$3\"",
+		"description": "rails route get",
+		"scope": "meta.rails.routes"
+  },
+	"route_Post": {
+		"prefix": "post",
+		"body": "post \"/$1\", to: \"$2#$3\"",
+		"description": "rails route post",
+		"scope": "meta.rails.routes"
+  },
+	"route_Patch": {
+		"prefix": "patch",
+		"body": "patch \"/$1\", to: \"$2#$3\"",
+		"description": "rails route patch",
+		"scope": "meta.rails.routes"
+  },
+	"route_Put": {
+		"prefix": "put",
+		"body": "put \"/$1\", to: \"$2#$3\"",
+		"description": "rails route put",
+		"scope": "meta.rails.routes"
+  },
+	"route_Delete": {
+		"prefix": "delete",
+		"body": "delete \"/$1\", to: \"$2#$3\"",
+		"description": "rails route delete",
+		"scope": "meta.rails.routes"
   },
   "resources": {
 		"prefix": "res",
@@ -115,7 +145,7 @@
 	},
 	"t.float": {
 		"prefix": "t.float",
-		"body": "t.float :${1:title}\n$0",
+		"body": "t.float :\n$0",
 		"description": "Table column float",
 		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
 	},
@@ -160,12 +190,6 @@
 		"body": "t.timestamps\n$0",
 		"description": "Table column timestamps",
 		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
-	},
-	"params": {
-		"prefix": "params",
-		"body": "params$1",
-		"description": "params",
-		"scope": "source.ruby"
 	},
 	"require": {
 		"prefix": "require",
