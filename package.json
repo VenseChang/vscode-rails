@@ -2,7 +2,7 @@
     "name": "rails-snippets",
     "displayName": "Rails Snippets",
     "description": "Ruby on Rails Snippets",
-    "version": "0.1.2",
+    "version": "0.1.3",
 	"icon": "rails.png",
     "publisher": "Vense",
     "engines": {
@@ -83,6 +83,13 @@
 				"extensions": [
 					".scss"
 				]
+			}
+		],
+		"grammars": [
+			{
+				"language": "html",
+				"scopeName": "text.html.erb",
+				"path": "./syntaxes/erb.tmLanguage"
 			}
 		]
     }
