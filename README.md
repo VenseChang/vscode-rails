@@ -4,7 +4,7 @@ Ruby on Rails Snippets
 
 
 ## Release Notes
-### 0.1.1
+### 0.1.2
 Add repository、homepage、bugs link
 ### 0.1.0
 Add Ruby and html(html.erb) Snippets

@@ -12,7 +12,7 @@
       "<%= $1 %>"
     ],
     "description": "rails expression(<%= %>)"
-	},
+  },
 	"form_for":{
 		"prefix": "form_for",
 		"body": [
@@ -65,6 +65,13 @@
 			" options_for_select([${options}]) "
 		],
 		"description": "rails options_for_select,options example:[['Lisbon', 1], ['Madrid', 2], ...], 2"
+	},
+  "submit":{
+    "prefix":"f.submit",
+    "body":[
+      "<%= f.submit %>"
+    ],
+    "description": "rails form submit"
 	},
   "number_field":{
 		"prefix": "f.number_field",
