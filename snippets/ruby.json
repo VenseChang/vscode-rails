@@ -160,5 +160,23 @@
 		"body": "t.timestamps\n$0",
 		"description": "Table column timestamps",
 		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"params": {
+		"prefix": "params",
+		"body": "params$1",
+		"description": "params",
+		"scope": "source.ruby"
+	},
+	"require": {
+		"prefix": "require",
+		"body": "require(:$1)$2",
+		"description": "require(:id)",
+		"scope": "source.ruby"
+	},
+	"permit": {
+		"prefix": "permit",
+		"body": "permit(:$1)$2",
+		"description": "permit(:id)",
+		"scope": "source.ruby"
 	}
 }
