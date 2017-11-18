@@ -1,4 +1,8 @@
 # Change log
+### 0.2.3
+- add Ruby snippets
+  - render
+  - params
 ### 0.2.2
 - Update Detail and Changelog, add link and snippets doc
 ### 0.2.1

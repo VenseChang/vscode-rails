@@ -101,6 +101,12 @@
 		"description": "resource with a custom member block",
 		"scope": "meta.rails.routes"
 	},
+	"render": {
+		"prefix": "render",
+		"body": "render ${path}",
+		"description": "render path ",
+		"scope": "source.ruby.rails"
+	},
 	"redirect_to": {
 		"prefix": "redirect_to",
 		"body": "redirect_to ${path}",
@@ -190,6 +196,12 @@
 		"body": "t.timestamps\n$0",
 		"description": "Table column timestamps",
 		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"params": {
+		"prefix": "params",
+		"body": "params.require(:${id_name}).permit(:${variable})",
+		"description": "params.require(:id_name).permit(:variable)",
+		"scope": "source.ruby"
 	},
 	"require": {
 		"prefix": "require",
