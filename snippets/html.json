@@ -13,6 +13,15 @@
     ],
     "description": "rails expression(<%= %>)"
   },
+	"each":{
+		"prefix": "each",
+		"body": [
+			"<%= ${@variable}.each do |${variable}| %>",
+			  "$2",
+			"<% end %>"
+		],
+		"description": "rails each"
+	},
 	"form_for":{
 		"prefix": "form_for",
 		"body": [
@@ -72,6 +81,13 @@
       "<%= f.submit %>"
     ],
     "description": "rails form submit"
+	},
+  "label":{
+    "prefix":"f.label",
+    "body":[
+      "<%= f.label :${id_name}, \"${text}\" %>"
+    ],
+    "description": "rails form label"
 	},
   "number_field":{
 		"prefix": "f.number_field",
@@ -150,6 +166,13 @@
 			"<%= render  \"${path}\" %>"
 		],
 		"description": "rails render"
+	},
+	"render_variable":{
+		"prefix": "render_variable",
+		"body": [
+			"<%= render  \"${path}\", ${variable}: ${variable} %>"
+		],
+		"description": "rails render variable"
 	},
 	"link_to":{
 		"prefix": "link_to",

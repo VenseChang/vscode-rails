@@ -1,16 +1,5 @@
 {
-  "has_one": {
-		"prefix": "has_one",
-		"body": "has_one :",
-		"description": "has_one :",
-		"scope": "source.ruby.rails"
-	},
-	"belongs_to": {
-		"prefix": "belongs_to",
-		"body": "belongs_to :",
-		"description": "belongs_to :",
-		"scope": "source.ruby.rails"
-	},
+	// Route
 	"route_Get": {
 		"prefix": "get",
 		"body": "get \"/$1\", to: \"$2#$3\"",
@@ -101,6 +90,7 @@
 		"description": "resource with a custom member block",
 		"scope": "meta.rails.routes"
 	},
+	// redirect function
 	"render": {
 		"prefix": "render",
 		"body": "render ${path}",
@@ -119,6 +109,7 @@
 		"description": "redirect_to path, notice: msg",
 		"scope": "source.ruby.rails"
 	},
+	// model
 	"t.binary": {
 		"prefix": "t.binary",
 		"body": "t.binary :",
@@ -197,6 +188,19 @@
 		"description": "Table column timestamps",
 		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
 	},
+	"has_one": {
+		"prefix": "has_one",
+		"body": "has_one :",
+		"description": "has_one :",
+		"scope": "source.ruby.rails"
+	},
+	"belongs_to": {
+		"prefix": "belongs_to",
+		"body": "belongs_to :",
+		"description": "belongs_to :",
+		"scope": "source.ruby.rails"
+	},
+	// Params process
 	"params": {
 		"prefix": "params",
 		"body": "params.require(:${id_name}).permit(:${variable})",
@@ -212,6 +216,62 @@
 	"permit": {
 		"prefix": "permit",
 		"body": "permit(:$1)$2",
+		"description": "permit(:id)",
+		"scope": "source.ruby"
+	},
+	// Controller
+	"controller": {
+		"prefix": "controller",
+		"body": "class $1Controller < ApplicationController\n $2\nend",
+		"description": "class Controller",
+		"scope": "source.ruby"
+	},
+	"index": {
+		"prefix": "index",
+		"body": "def index\n $1\nend",
+		"description": "Function index",
+		"scope": "source.ruby"
+	},
+	"create": {
+		"prefix": "create",
+		"body": "def create\n $1\nend",
+		"description": "Function create",
+		"scope": "source.ruby"
+	},
+	"new": {
+		"prefix": "new",
+		"body": "def new\n $1\nend",
+		"description": "Function new",
+		"scope": "source.ruby"
+	},
+	"edit": {
+		"prefix": "edit",
+		"body": "def edit\n $1\nend",
+		"description": "Function edit",
+		"scope": "source.ruby"
+	},
+	"show": {
+		"prefix": "show",
+		"body": "def show\n $1\nend",
+		"description": "Function show",
+		"scope": "source.ruby"
+	},
+	"update": {
+		"prefix": "update",
+		"body": "def update\n $1\nend",
+		"description": "Function update",
+		"scope": "source.ruby"
+	},
+	"destroy": {
+		"prefix": "destroy",
+		"body": "def destroy\n $1\nend",
+		"description": "Function destroy",
+		"scope": "source.ruby"
+	},
+	// Other
+	"find_by": {
+		"prefix": "find_by",
+		"body": "find_by(${id}: params[:${id}])",
 		"description": "permit(:id)",
 		"scope": "source.ruby"
 	}
