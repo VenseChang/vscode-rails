@@ -188,6 +188,84 @@
 		"description": "Table column timestamps",
 		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
 	},
+	"tcbi": {
+		"prefix": "tcbi",
+		"body": "t.binary :",
+		"description": "Table column binary",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"tcb": {
+		"prefix": "tcb",
+		"body": "t.boolean :",
+		"description": "Table column boolean",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"tcda": {
+		"prefix": "tcda",
+		"body": "t.date :",
+		"description": "Table column date",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"tcdt": {
+		"prefix": "tcdt",
+		"body": "t.datetime :",
+		"description": "Table column datetime",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"tcd": {
+		"prefix": "tcd",
+		"body": "t.decimal :",
+		"description": "Table column decimal",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"tcf": {
+		"prefix": "tcf",
+		"body": "t.float :",
+		"description": "Table column float",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"tci": {
+		"prefix": "tci",
+		"body": "t.integer :",
+		"description": "Table column integer",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"tcr": {
+		"prefix": "tcr",
+		"body": "t.references :",
+		"description": "Table column(s) references",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"tcs": {
+		"prefix": "tcs",
+		"body": "t.string :",
+		"description": "Table column string",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"tct": {
+		"prefix": "tct",
+		"body": "t.text :",
+		"description": "Table column text",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"tcti": {
+		"prefix": "tcti",
+		"body": "t.time :",
+		"description": "Table column time",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"tcts": {
+		"prefix": "tcts",
+		"body": "t.timestamp :",
+		"description": "Table column timestamp",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"tctss": {
+		"prefix": "tctss",
+		"body": "t.timestamps\n$0",
+		"description": "Table column timestamps",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
 	"has_one": {
 		"prefix": "has_one",
 		"body": "has_one :",

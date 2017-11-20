@@ -1,4 +1,6 @@
 # Change log
+## 0.2.7
+- Ruby model snippets add shortcut
 ## 0.2.6
 - fix controller snippets' space from 1 to 2 and add def func
 ## 0.2.5
