@@ -222,49 +222,49 @@
 	// Controller
 	"controller": {
 		"prefix": "controller",
-		"body": "class ${1:name}Controller < ApplicationController\n $2\nend",
+		"body": "class ${1:name}Controller < ApplicationController\n  $2\nend",
 		"description": "class Controller",
 		"scope": "source.ruby"
 	},
 	"index": {
 		"prefix": "index",
-		"body": "def index\n $1\nend",
+		"body": "def index\n  $1\nend",
 		"description": "Function index",
 		"scope": "source.ruby"
 	},
 	"create": {
 		"prefix": "create",
-		"body": "def create\n $1\nend",
+		"body": "def create\n  $1\nend",
 		"description": "Function create",
 		"scope": "source.ruby"
 	},
 	"new": {
 		"prefix": "new",
-		"body": "def new\n $1\nend",
+		"body": "def new\n  $1\nend",
 		"description": "Function new",
 		"scope": "source.ruby"
 	},
 	"edit": {
 		"prefix": "edit",
-		"body": "def edit\n $1\nend",
+		"body": "def edit\n  $1\nend",
 		"description": "Function edit",
 		"scope": "source.ruby"
 	},
 	"show": {
 		"prefix": "show",
-		"body": "def show\n $1\nend",
+		"body": "def show\n  $1\nend",
 		"description": "Function show",
 		"scope": "source.ruby"
 	},
 	"update": {
 		"prefix": "update",
-		"body": "def update\n $1\nend",
+		"body": "def update\n  $1\nend",
 		"description": "Function update",
 		"scope": "source.ruby"
 	},
 	"destroy": {
 		"prefix": "destroy",
-		"body": "def destroy\n $1\nend",
+		"body": "def destroy\n  $1\nend",
 		"description": "Function destroy",
 		"scope": "source.ruby"
 	},
@@ -273,6 +273,12 @@
 		"prefix": "find_by",
 		"body": "find_by(${1:id_name}: params[:${2:param}])",
 		"description": "permit(:id)",
+		"scope": "source.ruby"
+	},
+	"def": {
+		"prefix": "def",
+		"body": "def ${1:name}\n  $2\nend",
+		"description": "def",
 		"scope": "source.ruby"
 	}
 }
