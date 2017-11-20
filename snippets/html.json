@@ -16,7 +16,7 @@
 	"each":{
 		"prefix": "each",
 		"body": [
-			"<%= ${1:id}.each do |${2:variable}| %>",
+			"<% ${1:id}.each do |${2:variable}| %>",
 			  "$3",
 			"<% end %>"
 		],
@@ -25,7 +25,7 @@
 	"form_for":{
 		"prefix": "form_for",
 		"body": [
-			"<% form_for ${variable} do |f| %>",
+			"<%= form_for ${variable} do |f| %>",
 			  "$2",
 			"<% end %>"
 		],
@@ -34,7 +34,7 @@
 	"simple_form_for":{
 		"prefix": "simple_form_for",
 		"body": [
-			"<% simple_form_for ${variable} do |f| %>",
+			"<%= simple_form_for ${variable} do |f| %>",
 			  "$2",
 			"<% end %>"
 		],

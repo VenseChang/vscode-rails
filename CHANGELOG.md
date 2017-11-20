@@ -1,4 +1,6 @@
 # Change log
+## 0.2.9
+- fix html snippet bug
 ## 0.2.8
 - fix html bug
 ## 0.2.7
