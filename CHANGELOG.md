@@ -1,4 +1,6 @@
 # Change log
+## 0.2.8
+- fix html bug
 ## 0.2.7
 - Ruby model snippets add shortcut
 ## 0.2.6
