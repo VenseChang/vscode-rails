@@ -110,79 +110,79 @@
 		"scope": "source.ruby.rails"
 	},
 	// model
-	"t.binary": {
+	"t.binary(tcbi)": {
 		"prefix": "t.binary",
 		"body": "t.binary :",
 		"description": "Table column binary",
 		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
 	},
-	"t.boolean": {
+	"t.boolean(tcb)": {
 		"prefix": "t.boolean",
 		"body": "t.boolean :",
 		"description": "Table column boolean",
 		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
 	},
-	"t.date": {
+	"t.date(tcda)": {
 		"prefix": "t.date",
 		"body": "t.date :",
 		"description": "Table column date",
 		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
 	},
-	"t.datetime": {
+	"t.datetime(tcdt)": {
 		"prefix": "t.datetime",
 		"body": "t.datetime :",
 		"description": "Table column datetime",
 		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
 	},
-	"t.decimal": {
+	"t.decimal(tcd)": {
 		"prefix": "t.decimal",
 		"body": "t.decimal :",
 		"description": "Table column decimal",
 		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
 	},
-	"t.float": {
+	"t.float(tcf)": {
 		"prefix": "t.float",
 		"body": "t.float :",
 		"description": "Table column float",
 		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
 	},
-	"t.integer": {
+	"t.integer(tci)": {
 		"prefix": "t.integer",
 		"body": "t.integer :",
 		"description": "Table column integer",
 		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
 	},
-	"t.references": {
+	"t.references(tcr)": {
 		"prefix": "t.references",
 		"body": "t.references :",
 		"description": "Table column(s) references",
 		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
 	},
-	"t.string": {
+	"t.string(tcs)": {
 		"prefix": "t.string",
 		"body": "t.string :",
 		"description": "Table column string",
 		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
 	},
-	"t.text": {
+	"t.text(tct)": {
 		"prefix": "t.text",
 		"body": "t.text :",
 		"description": "Table column text",
 		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
 	},
-	"t.time": {
+	"t.time(tcti)": {
 		"prefix": "t.time",
 		"body": "t.time :",
 		"description": "Table column time",
 		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
 	},
-	"t.timestamp": {
+	"t.timestamp(tcts)": {
 		"prefix": "t.timestamp",
 		"body": "t.timestamp :",
 		"description": "Table column timestamp",
 		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
 	},
-	"t.timestamps": {
+	"t.timestamps(tctss)": {
 		"prefix": "t.timestamps",
 		"body": "t.timestamps\n$0",
 		"description": "Table column timestamps",

@@ -180,5 +180,33 @@
 			"<%= link_to  \"${text}\", ${path} %>"
 		],
 		"description": "rails link_to"
+	},
+	"link_to, method, data(ltmd)":{
+		"prefix": "link_to_method_data",
+		"body": [
+			"<%= link_to \"${1:link_text}\", ${2:path}, method: \"${3:method}\", data:{ ${4:data} } %>"
+		],
+		"description": "rails link_to"
+	},
+	"link_to, method, data":{
+		"prefix": "ltmd",
+		"body": [
+			"<%= link_to \"${1:link_text}\", ${2:path}, method: \"${3:method}\", data:{ ${4:data} } %>"
+		],
+		"description": "rails link_to"
+	},
+	"link_to, method, confirm(ltmdc)":{
+		"prefix": "link_to_method_confirm",
+		"body": [
+			"<%= link_to \"${1:link_text}\", ${2:path}, method: \"${3:method}\", data:{ confirm: \"${4:confirm}\"} %>"
+		],
+		"description": "rails link_to"
+	},
+	"link_to, method, confirm":{
+		"prefix": "ltmdc",
+		"body": [
+			"<%= link_to \"${1:link_text}\", ${2:path}, method: \"${3:method}\", data:{ confirm: \"${4:confirm}\"} %>"
+		],
+		"description": "rails link_to"
 	}
 }

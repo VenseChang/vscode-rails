@@ -1,4 +1,6 @@
 # Change log
+## 0.2.10
+- add Rails snippets and shortcut
 ## 0.2.9
 - fix html snippet bug
 ## 0.2.8
