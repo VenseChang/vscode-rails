@@ -16,8 +16,8 @@
 	"each":{
 		"prefix": "each",
 		"body": [
-			"<%= ${@variable}.each do |${variable}| %>",
-			  "$2",
+			"<%= ${1:id}.each do |${2:variable}| %>",
+			  "$3",
 			"<% end %>"
 		],
 		"description": "rails each"
@@ -170,7 +170,7 @@
 	"render_variable":{
 		"prefix": "render_variable",
 		"body": [
-			"<%= render  \"${path}\", ${variable}: ${variable} %>"
+			"<%= render  \"${path}\", ${variable1}: ${variable2} %>"
 		],
 		"description": "rails render variable"
 	},

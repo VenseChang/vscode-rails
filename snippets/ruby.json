@@ -2,31 +2,31 @@
 	// Route
 	"route_Get": {
 		"prefix": "get",
-		"body": "get \"/$1\", to: \"$2#$3\"",
+		"body": "get \"/${1:route}\", to: \"${2:controller}#${3:function}\"",
 		"description": "rails route get",
 		"scope": "meta.rails.routes"
   },
 	"route_Post": {
 		"prefix": "post",
-		"body": "post \"/$1\", to: \"$2#$3\"",
+		"body": "post \"/${1:route}\", to: \"${2:controller}#${3:function}\"",
 		"description": "rails route post",
 		"scope": "meta.rails.routes"
   },
 	"route_Patch": {
 		"prefix": "patch",
-		"body": "patch \"/$1\", to: \"$2#$3\"",
+		"body": "patch \"/${1:route}\", to: \"${2:controller}#${3:function}\"",
 		"description": "rails route patch",
 		"scope": "meta.rails.routes"
   },
 	"route_Put": {
 		"prefix": "put",
-		"body": "put \"/$1\", to: \"$2#$3\"",
+		"body": "put \"/${1:route}\", to: \"${2:controller}#${3:function}\"",
 		"description": "rails route put",
 		"scope": "meta.rails.routes"
   },
 	"route_Delete": {
 		"prefix": "delete",
-		"body": "delete \"/$1\", to: \"$2#$3\"",
+		"body": "delete \"/${1:route}\", to: \"${2:controller}#${3:function}\"",
 		"description": "rails route delete",
 		"scope": "meta.rails.routes"
   },
@@ -142,7 +142,7 @@
 	},
 	"t.float": {
 		"prefix": "t.float",
-		"body": "t.float :\n$0",
+		"body": "t.float :",
 		"description": "Table column float",
 		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
 	},
@@ -203,7 +203,7 @@
 	// Params process
 	"params": {
 		"prefix": "params",
-		"body": "params.require(:${id_name}).permit(:${variable})",
+		"body": "params.require(:${1:id_name}).permit(:${2:variable})",
 		"description": "params.require(:id_name).permit(:variable)",
 		"scope": "source.ruby"
 	},
@@ -222,7 +222,7 @@
 	// Controller
 	"controller": {
 		"prefix": "controller",
-		"body": "class $1Controller < ApplicationController\n $2\nend",
+		"body": "class ${1:name}Controller < ApplicationController\n $2\nend",
 		"description": "class Controller",
 		"scope": "source.ruby"
 	},
@@ -271,7 +271,7 @@
 	// Other
 	"find_by": {
 		"prefix": "find_by",
-		"body": "find_by(${id}: params[:${id}])",
+		"body": "find_by(${1:id_name}: params[:${2:param}])",
 		"description": "permit(:id)",
 		"scope": "source.ruby"
 	}

@@ -1,4 +1,6 @@
 # Change log
+## 0.2.5
+- optimization snippets
 ## 0.2.4
 - add Ruby snippets
   - controller

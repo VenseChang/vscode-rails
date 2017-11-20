@@ -1,13 +1,13 @@
 {
-    "name": "rails-snippets",
-    "displayName": "Rails Snippets",
-    "description": "Ruby on Rails Snippets",
-    "version": "0.2.4",
+	"name": "rails-snippets",
+	"displayName": "Rails Snippets",
+	"description": "Ruby on Rails Snippets",
+	"version": "0.2.5",
 	"icon": "rails.png",
-    "publisher": "Vense",
-    "engines": {
-        "vscode": "^1.18.0"
-    },
+	"publisher": "Vense",
+	"engines": {
+		"vscode": "^1.18.0"
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Drunces/vscode-rails.git"
@@ -16,10 +16,10 @@
 	"bugs": {
 		"url": "https://github.com/Drunces/vscode-rails/issues"
 	},
-    "categories": [
-        "Snippets",
-        "Other"
-    ],
+	"categories": [
+		"Snippets",
+		"Other"
+	],
 	"keywords": [
 		"rails",
 		"ROR",
@@ -27,8 +27,8 @@
 		"Ruby on Rails",
 		".erb"
 	],
-    "contributes": {
-        "snippets":[
+	"contributes": {
+		"snippets": [
 			{
 				"language": "javascript",
 				"path": "./snippets/javascript.json"
@@ -92,5 +92,10 @@
 				"path": "./syntaxes/erb.tmLanguage"
 			}
 		]
-    }
+	},
+	"__metadata": {
+		"id": "c73ec1f3-284f-426b-8a2c-78ce20ab9e3f",
+		"publisherId": "8d050479-2fce-486c-880f-e782171cfd5a",
+		"publisherDisplayName": "Vense"
+	}
 }
