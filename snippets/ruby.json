@@ -377,16 +377,40 @@
 		"scope": "source.ruby"
 	},
 	// Other
+	"first": {
+		"prefix": "first",
+		"body": "first(${quantity})",
+		"description": "first(quantity)",
+		"scope": "source.ruby"
+	},
 	"find_by": {
 		"prefix": "find_by",
 		"body": "find_by(${1:id_name}: params[:${2:param}])",
 		"description": "find_by(id_name: params[:param])",
 		"scope": "source.ruby"
 	},
+	"where": {
+		"prefix": "where",
+		"body": "where(${condition})",
+		"description": "where(condition)",
+		"scope": "source.ruby"
+	},
 	"increment": {
 		"prefix": "increment",
 		"body": "increment(:${1:id})",
 		"description": "increment(:id)",
+		"scope": "source.ruby"
+	},
+	"order": {
+		"prefix": "order",
+		"body": "order(${1:id}: :${2:desc})",
+		"description": "order(id: :desc)",
+		"scope": "source.ruby"
+	},
+	"limit": {
+		"prefix": "limit",
+		"body": "limit(${quantity})",
+		"description": "limit(quantity)",
 		"scope": "source.ruby"
 	},
 	"def": {

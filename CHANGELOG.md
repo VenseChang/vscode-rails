@@ -1,4 +1,6 @@
 # Change log
+## 0.2.13
+- add Ruby ORM snippets
 ## 0.2.12
 1. add contact email
 2. erb snippets
