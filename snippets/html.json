@@ -160,6 +160,13 @@
 		],
 		"description": "rails radio_button,id will be ${name}_${value}"
 	},
+	"input":{
+		"prefix": "f.input",
+		"body": [
+			"<%= f.input :${1:id}, label: \"${2:text}\" %>"
+		],
+		"description": "rails simple_form_for input field"
+	},
 	"render":{
 		"prefix": "render",
 		"body": [
@@ -174,10 +181,31 @@
 		],
 		"description": "rails render variable"
 	},
-	"link_to":{
+	"link_to(lito)":{
 		"prefix": "link_to",
 		"body": [
 			"<%= link_to  \"${text}\", ${path} %>"
+		],
+		"description": "rails link_to"
+	},
+	"link_to":{
+		"prefix": "lito",
+		"body": [
+			"<%= link_to  \"${text}\", ${path} %>"
+		],
+		"description": "rails link_to"
+	},
+	"link_to class(litoc)":{
+		"prefix": "link_to_class",
+		"body": [
+			"<%= link_to  \"${1:text}\", ${2:path}, class:\"${3:class}\" %>"
+		],
+		"description": "rails link_to"
+	},
+	"link_to class":{
+		"prefix": "litoc",
+		"body": [
+			"<%= link_to  \"${1:text}\", ${2:path}, class:\"${3:class}\" %>"
 		],
 		"description": "rails link_to"
 	},
@@ -195,6 +223,20 @@
 		],
 		"description": "rails link_to"
 	},
+	"link_to, method, data_class(ltmdc)":{
+		"prefix": "link_to_method_data",
+		"body": [
+			"<%= link_to \"${1:link_text}\", ${2:path}, method: \"${3:method}\", data:{ ${4:data} }, class:\"${5:class}\" %>"
+		],
+		"description": "rails link_to"
+	},
+	"link_to, method, data_class":{
+		"prefix": "ltmdc",
+		"body": [
+			"<%= link_to \"${1:link_text}\", ${2:path}, method: \"${3:method}\", data:{ ${4:data} }, class:\"${5:class}\" %>"
+		],
+		"description": "rails link_to"
+	},
 	"link_to, method, confirm(ltmdc)":{
 		"prefix": "link_to_method_confirm",
 		"body": [
@@ -206,6 +248,20 @@
 		"prefix": "ltmdc",
 		"body": [
 			"<%= link_to \"${1:link_text}\", ${2:path}, method: \"${3:method}\", data:{ confirm: \"${4:confirm}\"} %>"
+		],
+		"description": "rails link_to"
+	},
+	"link_to, method, confirm_class(ltmdcc)":{
+		"prefix": "link_to_method_confirm",
+		"body": [
+			"<%= link_to \"${1:link_text}\", ${2:path}, method: \"${3:method}\", data:{ confirm: \"${4:confirm}\"}, class:\"${5:class}\" %>"
+		],
+		"description": "rails link_to"
+	},
+	"link_to, method, confirm_class":{
+		"prefix": "ltmdcc",
+		"body": [
+			"<%= link_to \"${1:link_text}\", ${2:path}, method: \"${3:method}\", data:{ confirm: \"${4:confirm}\"}, class:\"${5:class}\" %>"
 		],
 		"description": "rails link_to"
 	}

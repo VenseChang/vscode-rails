@@ -1,4 +1,9 @@
 # Change log
+## 0.2.12
+1. add contact email
+2. erb snippets
+  - add simple_form_for input field snippet
+  - add link_to with class snippet
 ## 0.2.11
 - add Ruby model snippets and increment func
 ## 0.2.10
