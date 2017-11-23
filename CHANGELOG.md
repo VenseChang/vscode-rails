@@ -1,4 +1,6 @@
 # Change log
+## 0.2.11
+- add Ruby model snippets and increment func
 ## 0.2.10
 - add Rails snippets and shortcut
 ## 0.2.9

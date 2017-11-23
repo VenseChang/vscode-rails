@@ -50,13 +50,13 @@
 	},
 	"resources_collection": {
 		"prefix": "res_collection_block",
-		"body": "resources :${res_name} do\n  collection do\n    ${2:get} :${3:action}\n  end\nend",
+		"body": "resources :${1:res_name} do\n  collection do\n    ${2:get} :${3:action}\n  end\nend",
 		"description": "resources with a custom collection block",
 		"scope": "meta.rails.routes"
 	},
 	"resources_member": {
 		"prefix": "res_member_block",
-		"body": "resources :${res_name} do\n  member do\n    ${2:get} :${3:action}\n  end\nend",
+		"body": "resources :${1:res_name} do\n  member do\n    ${2:get} :${3:action}\n  end\nend",
 		"description": "resources with a custom member block",
 		"scope": "meta.rails.routes"
 	},
@@ -80,13 +80,13 @@
 	},
 	"resource_collection": {
 		"prefix": "re_collection_block",
-		"body": "resource :${res_name} do\n  collection do\n    ${2:get} :${3:action}\n  end\nend",
+		"body": "resource :${1:res_name} do\n  collection do\n    ${2:get} :${3:action}\n  end\nend",
 		"description": "resource with a custom collection block",
 		"scope": "meta.rails.routes"
 	},
 	"resource_member": {
 		"prefix": "re_member_block",
-		"body": "resource :${res_name} do\n  member do\n    ${2:get} :${3:action}\n  end\nend",
+		"body": "resource :${1:res_name} do\n  member do\n    ${2:get} :${3:action}\n  end\nend",
 		"description": "resource with a custom member block",
 		"scope": "meta.rails.routes"
 	},
@@ -272,10 +272,34 @@
 		"description": "has_one :",
 		"scope": "source.ruby.rails"
 	},
+	"has_one_dependent": {
+		"prefix": "has_one_dependent",
+		"body": "has_one :${1:id}, dependent: :${2:type}",
+		"description": "has_one :id, dependent: :type",
+		"scope": "source.ruby.rails"
+	},
+	"has_many": {
+		"prefix": "has_many",
+		"body": "has_many :",
+		"description": "has_many :",
+		"scope": "source.ruby.rails"
+	},
+	"has_many_dependent": {
+		"prefix": "has_many_dependent",
+		"body": "has_many :${1:id}, dependent: :${2:type}",
+		"description": "has_many :id, dependent: :type",
+		"scope": "source.ruby.rails"
+	},
 	"belongs_to": {
 		"prefix": "belongs_to",
 		"body": "belongs_to :",
 		"description": "belongs_to :",
+		"scope": "source.ruby.rails"
+	},
+	"belongs_to_cache": {
+		"prefix": "belongs_to_cache",
+		"body": "belongs_to :${1:id}, cache: ${2:true}",
+		"description": "belongs_to :id, cache: true",
 		"scope": "source.ruby.rails"
 	},
 	// Params process
@@ -346,11 +370,23 @@
 		"description": "Function destroy",
 		"scope": "source.ruby"
 	},
+	"before_action": {
+		"prefix": "before_action",
+		"body": "before_action :${1:id}, only: [:${2:func}]",
+		"description": "before action",
+		"scope": "source.ruby"
+	},
 	// Other
 	"find_by": {
 		"prefix": "find_by",
 		"body": "find_by(${1:id_name}: params[:${2:param}])",
-		"description": "permit(:id)",
+		"description": "find_by(id_name: params[:param])",
+		"scope": "source.ruby"
+	},
+	"increment": {
+		"prefix": "increment",
+		"body": "increment(:${1:id})",
+		"description": "increment(:id)",
 		"scope": "source.ruby"
 	},
 	"def": {
