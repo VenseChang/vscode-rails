@@ -284,6 +284,12 @@
 		"description": "has_many :",
 		"scope": "source.ruby.rails"
 	},
+	"has_many_through": {
+		"prefix": "has_many_through",
+		"body": "has_many :${1:model1}, through: :${2:model2}",
+		"description": "has_many :model1, through: :model2",
+		"scope": "source.ruby.rails"
+	},
 	"has_many_dependent": {
 		"prefix": "has_many_dependent",
 		"body": "has_many :${1:id}, dependent: :${2:type}",
@@ -300,6 +306,18 @@
 		"prefix": "belongs_to_cache",
 		"body": "belongs_to :${1:id}, cache: ${2:true}",
 		"description": "belongs_to :id, cache: true",
+		"scope": "source.ruby.rails"
+	},
+	"has_and_belongs_to_many(habtm)": {
+		"prefix": "has_and_belongs_to_many",
+		"body": "has_and_belongs_to_many :${1:id}",
+		"description": "has_and_belongs_to_many :id",
+		"scope": "source.ruby.rails"
+	},
+	"habtm": {
+		"prefix": "habtm",
+		"body": "has_and_belongs_to_many :${1:id}",
+		"description": "has_and_belongs_to_many :id",
 		"scope": "source.ruby.rails"
 	},
 	// Params process
