@@ -25,7 +25,7 @@
 	"form_for":{
 		"prefix": "form_for",
 		"body": [
-			"<%= form_for ${variable} do |f| %>",
+			"<%= form_for ${1:variable} do |f| %>",
 			  "$2",
 			"<% end %>"
 		],
@@ -34,7 +34,7 @@
 	"simple_form_for":{
 		"prefix": "simple_form_for",
 		"body": [
-			"<%= simple_form_for ${variable} do |f| %>",
+			"<%= simple_form_for ${1:variable} do |f| %>",
 			  "$2",
 			"<% end %>"
 		],
@@ -282,8 +282,8 @@
 	"edit_path":{
 		"prefix": "edit_path",
 		"body": [
-			"edit_${1:path}_path"
+			"edit_${1:path}_path(${2:variable})"
 		],
-		"description": "rails edit_path"
+		"description": "rails edit_path(variable)"
 	}
 }
