@@ -2,7 +2,7 @@
 	"name": "rails-snippets",
 	"displayName": "Rails Snippets",
 	"description": "Ruby on Rails Snippets",
-	"version": "0.2.14",
+	"version": "0.2.15",
 	"icon": "rails.png",
 	"publisher": "Vense",
 	"engines": {

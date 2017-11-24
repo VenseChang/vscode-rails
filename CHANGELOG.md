@@ -1,4 +1,6 @@
 # Change log
+## 0.2.15
+- add Rails path snippets
 ## 0.2.14
 - add Ruby Model snippets
 ## 0.2.13

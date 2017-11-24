@@ -264,5 +264,26 @@
 			"<%= link_to \"${1:link_text}\", ${2:path}, method: \"${3:method}\", data:{ confirm: \"${4:confirm}\"}, class:\"${5:class}\" %>"
 		],
 		"description": "rails link_to"
+	},
+	"path":{
+		"prefix": "path",
+		"body": [
+			"${1:path}_path"
+		],
+		"description": "rails path"
+	},
+	"new_path":{
+		"prefix": "new_path",
+		"body": [
+			"new_${1:path}_path"
+		],
+		"description": "rails new_path"
+	},
+	"edit_path":{
+		"prefix": "edit_path",
+		"body": [
+			"edit_${1:path}_path"
+		],
+		"description": "rails edit_path"
 	}
 }
