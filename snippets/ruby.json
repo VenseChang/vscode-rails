@@ -388,6 +388,12 @@
 		"description": "Function destroy",
 		"scope": "source.ruby"
 	},
+	"CRUD": {
+		"prefix": "CRUD",
+		"body": "def index\n  \nend\ndef create\n  \nend\ndef new\n  \nend\ndef edit\n  \nend\ndef show\n  \nend\ndef update\n  \nend\ndef destroy\n  \nend",
+		"description": "CRUD Function",
+		"scope": "source.ruby"
+	},
 	"before_action": {
 		"prefix": "before_action",
 		"body": "before_action :${1:id}, only: [:${2:func}]",

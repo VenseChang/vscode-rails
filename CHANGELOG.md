@@ -1,4 +1,14 @@
 # Change log
+## 0.2.17
+- add Ruby snippet - CRUD
+  - auto create empty CRUD func
+    1. index
+    2. create
+    3. new
+    4. edit
+    5. show
+    6. update
+    7. destroy
 ## 0.2.16
 - fix edit snippet without variable
 ## 0.2.15
