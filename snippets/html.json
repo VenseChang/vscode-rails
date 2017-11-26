@@ -6,10 +6,24 @@
     ],
     "description": "rails expression(<% %>)"
   },
+  "ruby-expression-block(<% %>)":{
+    "prefix":"prb",
+		"body":[
+      "<% $1 %>\n\n<% end %>"
+    ],
+    "description": "rails expression(<% %>)"
+  },
   "ruby-expression(<%= %>)":{
     "prefix":"pr-e",
     "body":[
       "<%= $1 %>"
+    ],
+    "description": "rails expression(<%= %>)"
+  },
+  "ruby-expression-block(<%= %>)":{
+    "prefix":"prb-e",
+    "body":[
+      "<%= $1 %>\n\n<% end %>"
     ],
     "description": "rails expression(<%= %>)"
   },

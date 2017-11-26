@@ -38,13 +38,13 @@
   },
 	"resources_only": {
 		"prefix": "res_only",
-		"body": "resources :${res_name}, only: [:${index}]",
+		"body": "resources :${1:res_name}, only: [:${2:index}]",
 		"description": "resources :name, only: [:actions]",
 		"scope": "meta.rails.routes"
 	},
 	"resources_block": {
 		"prefix": "res_block",
-		"body": "resources :${res_name} do\n  $2\nend",
+		"body": "resources :${1:res_name} do\n  $2\nend",
 		"description": "resources with an empty params block",
 		"scope": "meta.rails.routes"
 	},
@@ -68,13 +68,13 @@
 	},
 	"resource_only": {
 		"prefix": "re_only",
-		"body": "resource :${res_name}, only: [:${index}]",
+		"body": "resource :${1:res_name}, only: [:${2:index}]",
 		"description": "resource :name, only: [:actions]",
 		"scope": "meta.rails.routes"
 	},
 	"resource_block": {
 		"prefix": "re_block",
-		"body": " :${res_name} do\n  $2\nend",
+		"body": " :${1:res_name} do\n  $2\nend",
 		"description": "resource with an empty params block",
 		"scope": "meta.rails.routes"
 	},
@@ -110,6 +110,12 @@
 		"scope": "source.ruby.rails"
 	},
 	// model
+	"add_column": {
+		"prefix": "add_column",
+		"body": "add_column :${1:table}, :${2:column}, :${3:type}",
+		"description": "add_column :table, :column, :type",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
 	"t.binary(tcbi)": {
 		"prefix": "t.binary",
 		"body": "t.binary :",
@@ -339,6 +345,12 @@
 		"description": "permit(:id)",
 		"scope": "source.ruby"
 	},
+	"validates": {
+		"prefix": "validates",
+		"body": "validates :${1:column}, presence: true",
+		"description": "validates :column, presence: true",
+		"scope": "source.ruby"
+	},
 	// Controller
 	"controller": {
 		"prefix": "controller",
@@ -394,9 +406,39 @@
 		"description": "CRUD Function",
 		"scope": "source.ruby"
 	},
-	"before_action": {
+	"before_action(ba)": {
 		"prefix": "before_action",
+		"body": "before_action :${1:id}",
+		"description": "before action",
+		"scope": "source.ruby"
+	},
+	"before_action": {
+		"prefix": "ba",
+		"body": "before_action :${1:id}",
+		"description": "before action",
+		"scope": "source.ruby"
+	},
+	"before_action_only(bao)": {
+		"prefix": "before_action_only",
 		"body": "before_action :${1:id}, only: [:${2:func}]",
+		"description": "before action",
+		"scope": "source.ruby"
+	},
+	"before_action_only": {
+		"prefix": "bao",
+		"body": "before_action :${1:id}, only: [:${2:func}]",
+		"description": "before action",
+		"scope": "source.ruby"
+	},
+	"before_action_except(bae)": {
+		"prefix": "before_action_except",
+		"body": "before_action :${1:id}, except: [:${2:func}]",
+		"description": "before action",
+		"scope": "source.ruby"
+	},
+	"before_action_except": {
+		"prefix": "bae",
+		"body": "before_action :${1:id}, except: [:${2:func}]",
 		"description": "before action",
 		"scope": "source.ruby"
 	},

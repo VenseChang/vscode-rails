@@ -1,4 +1,13 @@
 # Change log
+## 0.2.19
+- add Rails pr & pr-e block functions
+- add Ruby snippets
+  1. validates
+  2. add_column
+  3. 3 types - before_action
+    - before_action :id
+    - before_action :id, only: [:func]
+    - before_action :id, except: [:func]
 ## 0.2.18
 - fix CRUD problem
 ## 0.2.17
