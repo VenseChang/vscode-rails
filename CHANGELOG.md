@@ -1,4 +1,6 @@
 # Change log
+## 0.2.18
+- fix CRUD problem
 ## 0.2.17
 - add Ruby snippet - CRUD
   - auto create empty CRUD func

@@ -50,13 +50,13 @@
 	},
 	"resources_collection": {
 		"prefix": "res_collection_block",
-		"body": "resources :${1:res_name} do\n  collection do\n    ${2:get} :${3:action}\n  end\nend",
+		"body": "resources :${1:res_name} do\n  collection do\n    ${2:get} :${3:action}\n  end\n\nend",
 		"description": "resources with a custom collection block",
 		"scope": "meta.rails.routes"
 	},
 	"resources_member": {
 		"prefix": "res_member_block",
-		"body": "resources :${1:res_name} do\n  member do\n    ${2:get} :${3:action}\n  end\nend",
+		"body": "resources :${1:res_name} do\n  member do\n    ${2:get} :${3:action}\n  end\n\nend",
 		"description": "resources with a custom member block",
 		"scope": "meta.rails.routes"
 	},
@@ -80,13 +80,13 @@
 	},
 	"resource_collection": {
 		"prefix": "re_collection_block",
-		"body": "resource :${1:res_name} do\n  collection do\n    ${2:get} :${3:action}\n  end\nend",
+		"body": "resource :${1:res_name} do\n  collection do\n    ${2:get} :${3:action}\n  end\n\nend",
 		"description": "resource with a custom collection block",
 		"scope": "meta.rails.routes"
 	},
 	"resource_member": {
 		"prefix": "re_member_block",
-		"body": "resource :${1:res_name} do\n  member do\n    ${2:get} :${3:action}\n  end\nend",
+		"body": "resource :${1:res_name} do\n  member do\n    ${2:get} :${3:action}\n  end\n\nend",
 		"description": "resource with a custom member block",
 		"scope": "meta.rails.routes"
 	},
@@ -390,7 +390,7 @@
 	},
 	"CRUD": {
 		"prefix": "CRUD",
-		"body": "def index\n  \nend\ndef create\n  \nend\ndef new\n  \nend\ndef edit\n  \nend\ndef show\n  \nend\ndef update\n  \nend\ndef destroy\n  \nend",
+		"body": "def index\n  \nend\n\ndef create\n  \nend\n\ndef new\n  \nend\n\ndef edit\n  \nend\n\ndef show\n  \nend\n\ndef update\n  \nend\n\ndef destroy\n  \nend",
 		"description": "CRUD Function",
 		"scope": "source.ruby"
 	},
