@@ -1,4 +1,17 @@
 {
+	// Snippet
+	"only": {
+		"prefix": "only",
+		"body": "only: [:${1:func}]",
+		"description": "rails only function",
+		"scope": "meta.rails.routes"
+  },
+	"except": {
+		"prefix": "except",
+		"body": "except: [:${1:func}]",
+		"description": "rails except function",
+		"scope": "meta.rails.routes"
+  },
 	// Route
 	"route_Get": {
 		"prefix": "get",
@@ -36,12 +49,6 @@
 		"description": "resources without a custom collection block",
 		"scope": "meta.rails.routes"
   },
-	"resources_only": {
-		"prefix": "res_only",
-		"body": "resources :${1:res_name}, only: [:${2:index}]",
-		"description": "resources :name, only: [:actions]",
-		"scope": "meta.rails.routes"
-	},
 	"resources_block": {
 		"prefix": "res_block",
 		"body": "resources :${1:res_name} do\n  $2\nend",
@@ -64,12 +71,6 @@
 		"prefix": "re",
 		"body": "resource :${res_name}",
 		"description": "resource without a custom collection block",
-		"scope": "meta.rails.routes"
-	},
-	"resource_only": {
-		"prefix": "re_only",
-		"body": "resource :${1:res_name}, only: [:${2:index}]",
-		"description": "resource :name, only: [:actions]",
 		"scope": "meta.rails.routes"
 	},
 	"resource_block": {
@@ -114,6 +115,12 @@
 		"prefix": "add_column",
 		"body": "add_column :${1:table}, :${2:column}, :${3:type}",
 		"description": "add_column :table, :column, :type",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
+	"add_reference": {
+		"prefix": "add_reference",
+		"body": "add_reference :${1:table}, :${2:column}, foreign_key: true",
+		"description": "add_reference :table, :column, foreign_key: true",
 		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
 	},
 	"t.binary(tcbi)": {
@@ -415,30 +422,6 @@
 	"before_action": {
 		"prefix": "ba",
 		"body": "before_action :${1:id}",
-		"description": "before action",
-		"scope": "source.ruby"
-	},
-	"before_action_only(bao)": {
-		"prefix": "before_action_only",
-		"body": "before_action :${1:id}, only: [:${2:func}]",
-		"description": "before action",
-		"scope": "source.ruby"
-	},
-	"before_action_only": {
-		"prefix": "bao",
-		"body": "before_action :${1:id}, only: [:${2:func}]",
-		"description": "before action",
-		"scope": "source.ruby"
-	},
-	"before_action_except(bae)": {
-		"prefix": "before_action_except",
-		"body": "before_action :${1:id}, except: [:${2:func}]",
-		"description": "before action",
-		"scope": "source.ruby"
-	},
-	"before_action_except": {
-		"prefix": "bae",
-		"body": "before_action :${1:id}, except: [:${2:func}]",
 		"description": "before action",
 		"scope": "source.ruby"
 	},

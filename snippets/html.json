@@ -167,6 +167,20 @@
 		],
 		"description": "rails text_field"
 	},
+	"date_field":{
+		"prefix": "f.date_field",
+		"body": [
+			"<%= f.date_field :${id_name} %>"
+		],
+		"description": "rails date_field"
+	},
+	"datetime_field":{
+		"prefix": "f.datetime_field",
+		"body": [
+			"<%= f.datetime_field :${id_name} %>"
+		],
+		"description": "rails datetime_field"
+	},
 	"radio_button":{
 		"prefix": "f.radio_button",
 		"body": [
