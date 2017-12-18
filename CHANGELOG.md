@@ -1,4 +1,7 @@
 # Change log
+## 0.3.1
+- add dependent snippet
+- change CRUD sort
 ## 0.3.0
 - remove functions with only syntax 
   - lile: resource_only

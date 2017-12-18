@@ -111,6 +111,12 @@
 		"scope": "source.ruby.rails"
 	},
 	// model
+	"dependent": {
+		"prefix": "dependent",
+		"body": "dependent: :${1:id}",
+		"description": "model dependent",
+		"scope": "meta.rails.migration.create_table, meta.rails.migration.change_table"
+	},
 	"add_column": {
 		"prefix": "add_column",
 		"body": "add_column :${1:table}, :${2:column}, :${3:type}",
@@ -409,7 +415,7 @@
 	},
 	"CRUD": {
 		"prefix": "CRUD",
-		"body": "def index\n  \nend\n\ndef create\n  \nend\n\ndef new\n  \nend\n\ndef edit\n  \nend\n\ndef show\n  \nend\n\ndef update\n  \nend\n\ndef destroy\n  \nend",
+		"body": "def index\n  \nend\n\ndef new\n  \nend\n\ndef create\n  \nend\n\ndef edit\n  \nend\n\ndef update\n  \nend\n\ndef show\n  \nend\n\ndef destroy\n  \nend",
 		"description": "CRUD Function",
 		"scope": "source.ruby"
 	},
