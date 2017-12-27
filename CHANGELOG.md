@@ -1,4 +1,6 @@
 # Change log
+## 0.3.2
+- add if snippet
 ## 0.3.1
 - add dependent snippet
 - change CRUD sort

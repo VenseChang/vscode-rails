@@ -432,6 +432,12 @@
 		"scope": "source.ruby"
 	},
 	// Other
+	"if": {
+		"prefix": "if",
+		"body": "if $1 \n\nend",
+		"description": "if block",
+		"scope": "source.ruby"
+	},
 	"first": {
 		"prefix": "first",
 		"body": "first(${quantity})",
