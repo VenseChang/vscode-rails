@@ -1,4 +1,10 @@
 # Change log
+## 0.3.3
+- add if snippet for Ruby and Rails
+ 1. if
+ 2. if else
+ 3. if elsif
+ 4. if elsif else
 ## 0.3.2
 - add if snippet
 ## 0.3.1
