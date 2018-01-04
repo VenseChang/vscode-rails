@@ -1,8 +1,8 @@
 {
 	"name": "rails-snippets",
 	"displayName": "Rails Snippets",
+	"version": "0.3.4",
 	"description": "Ruby on Rails Snippets",
-	"version": "0.3.3",
 	"icon": "rails.png",
 	"publisher": "Vense",
 	"engines": {

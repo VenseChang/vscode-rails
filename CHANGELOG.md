@@ -1,4 +1,6 @@
 # Change log
+## 0.3.4
+- update if snippets prefix for Ruby
 ## 0.3.3
 - add if snippet for Ruby and Rails
  1. if

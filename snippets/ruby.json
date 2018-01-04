@@ -439,19 +439,19 @@
 		"scope": "source.ruby"
 	},
 	"if else": {
-		"prefix": "if",
+		"prefix": "if else",
 		"body": "if $1\n  $2\nelse\n  $3\nend",
 		"description": "if else block",
 		"scope": "source.ruby"
 	},
 	"if elsif": {
-		"prefix": "if",
+		"prefix": "if elsif",
 		"body": "if $1\n  $2\nelsif $3\n  $4\nend",
 		"description": "if elsif block",
 		"scope": "source.ruby"
 	},
 	"if elsif else": {
-		"prefix": "if",
+		"prefix": "if elsif else",
 		"body": "if $1\n  $2\nelsif $3\n  $4\nelse\n  $5\nend",
 		"description": "if elsif else block",
 		"scope": "source.ruby"
