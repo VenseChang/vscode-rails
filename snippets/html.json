@@ -331,14 +331,14 @@
 	"if elsif":{
 		"prefix": "if elsif",
 		"body": [
-			"<% if $1 %>\n  $2\n<% elsif %3 %>\n  $4\n<% end %>"
+			"<% if $1 %>\n  $2\n<% elsif $3 %>\n  $4\n<% end %>"
 		],
 		"description": "rails if elsif"
 	},
 	"if elsif else":{
 		"prefix": "if elsif else",
 		"body": [
-			"<% if $1 %>\n  $2\n<% elsif %3 %>\n  $4\n<% else %>\n  $5\n<% end %>"
+			"<% if $1 %>\n  $2\n<% elsif $3 %>\n  $4\n<% else %>\n  $5\n<% end %>"
 		],
 		"description": "rails if elsif else"
 	}
