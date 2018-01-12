@@ -432,6 +432,12 @@
 		"scope": "source.ruby"
 	},
 	// Other
+	"do": {
+		"prefix": "do",
+		"body": "do\n  $2\nend",
+		"description": "do block",
+		"scope": "source.ruby"
+	},
 	"if": {
 		"prefix": "if",
 		"body": "if $1 \n  $2\nend",

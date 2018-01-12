@@ -1,4 +1,6 @@
 # Change log
+## 0.3.6
+- do end
 ## 0.3.5
 - fix if elsif and if elsif else have %3 problem
 ## 0.3.4
