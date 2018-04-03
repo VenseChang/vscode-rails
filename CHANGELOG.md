@@ -1,6 +1,16 @@
 # Change log
-## 0.3.6
-- do end
+## 0.4.1
+- fix member and collection space problem
+## 0.4.0
+- routes
+  - add member block
+  - add collection block
+- html.erb
+  - change to
+    - pre
+    - pre-
+    - preb
+    - preb-
 ## 0.3.5
 - fix if elsif and if elsif else have %3 problem
 ## 0.3.4

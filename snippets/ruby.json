@@ -91,6 +91,18 @@
 		"description": "resource with a custom member block",
 		"scope": "meta.rails.routes"
 	},
+	"member": {
+		"prefix": "member_block",
+		"body": "member do\n    ${2:get} :${3:action}\nend\n",
+		"description": "member block",
+		"scope": "meta.rails.routes"
+	},
+	"collection": {
+		"prefix": "collection_block",
+		"body": "collection do\n    ${2:get} :${3:action}\nend\n",
+		"description": "collection block",
+		"scope": "meta.rails.routes"
+	},
 	// redirect function
 	"render": {
 		"prefix": "render",

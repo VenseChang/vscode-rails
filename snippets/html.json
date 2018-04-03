@@ -1,27 +1,27 @@
 {
   "ruby-expression(<% %>)":{
-    "prefix":"pr",
+    "prefix":"pre",
 		"body":[
       "<% $1 %>"
     ],
     "description": "rails expression(<% %>)"
   },
   "ruby-expression-block(<% %>)":{
-    "prefix":"prb",
+    "prefix":"preb",
 		"body":[
       "<% $1 %>\n\n<% end %>"
     ],
     "description": "rails expression(<% %>)"
   },
   "ruby-expression(<%= %>)":{
-    "prefix":"pr-e",
+    "prefix":"pre-",
     "body":[
       "<%= $1 %>"
     ],
     "description": "rails expression(<%= %>)"
   },
   "ruby-expression-block(<%= %>)":{
-    "prefix":"prb-e",
+    "prefix":"preb-",
     "body":[
       "<%= $1 %>\n\n<% end %>"
     ],
