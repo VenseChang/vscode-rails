@@ -2,45 +2,45 @@
 	// Snippet
 	"only": {
 		"prefix": "only",
-		"body": "only: [:${1:func}]",
-		"description": "rails only function",
+		"body": "only: %i[${1:method}]",
+		"description": "rails only method",
 		"scope": "meta.rails.routes"
   },
 	"except": {
 		"prefix": "except",
-		"body": "except: [:${1:func}]",
-		"description": "rails except function",
+		"body": "except: %i[${1:method}]",
+		"description": "rails except method",
 		"scope": "meta.rails.routes"
   },
 	// Route
-	"route_Get": {
+	"route get": {
 		"prefix": "get",
-		"body": "get \"/${1:route}\", to: \"${2:controller}#${3:function}\"",
-		"description": "rails route get",
+		"body": "get \"/${1:route}\", to: \"${2:controller}#${3:method}\"",
+		"description": "rails route of get",
 		"scope": "meta.rails.routes"
   },
-	"route_Post": {
+	"route post": {
 		"prefix": "post",
-		"body": "post \"/${1:route}\", to: \"${2:controller}#${3:function}\"",
-		"description": "rails route post",
+		"body": "post \"/${1:route}\", to: \"${2:controller}#${3:method}\"",
+		"description": "rails route of post",
 		"scope": "meta.rails.routes"
   },
-	"route_Patch": {
+	"route patch": {
 		"prefix": "patch",
-		"body": "patch \"/${1:route}\", to: \"${2:controller}#${3:function}\"",
-		"description": "rails route patch",
+		"body": "patch \"/${1:route}\", to: \"${2:controller}#${3:method}\"",
+		"description": "rails route of patch",
 		"scope": "meta.rails.routes"
   },
-	"route_Put": {
+	"route put": {
 		"prefix": "put",
-		"body": "put \"/${1:route}\", to: \"${2:controller}#${3:function}\"",
-		"description": "rails route put",
+		"body": "put \"/${1:route}\", to: \"${2:controller}#${3:method}\"",
+		"description": "rails route of put",
 		"scope": "meta.rails.routes"
   },
-	"route_Delete": {
+	"route delete": {
 		"prefix": "delete",
-		"body": "delete \"/${1:route}\", to: \"${2:controller}#${3:function}\"",
-		"description": "rails route delete",
+		"body": "delete \"/${1:route}\", to: \"${2:controller}#${3:method}\"",
+		"description": "rails route of delete",
 		"scope": "meta.rails.routes"
   },
   "resources": {
@@ -49,21 +49,71 @@
 		"description": "resources without a custom collection block",
 		"scope": "meta.rails.routes"
   },
-	"resources_block": {
+	"resources block": {
 		"prefix": "res_block",
-		"body": "resources :${1:res_name} do\n  $2\nend",
+		"body": [
+			"resources :${1:res_name} do",
+				"$2",
+			"end"
+		],
 		"description": "resources with an empty params block",
 		"scope": "meta.rails.routes"
 	},
-	"resources_collection": {
+	"resources block (resb)": {
+		"prefix": "resb",
+		"body": [
+			"resources :${1:res_name} do",
+				"$2",
+			"end"
+		],
+		"description": "resources with an empty params block",
+		"scope": "meta.rails.routes"
+	},
+	"resources collection": {
 		"prefix": "res_collection_block",
-		"body": "resources :${1:res_name} do\n  collection do\n    ${2:get} :${3:action}\n  end\n\nend",
+		"body": [
+			"resources :${1:res_name} do",
+				"collection do",
+					"$2",
+				"end",
+			"end"
+		],
+		"description": "resources with a custom collection block",
+		"scope": "meta.rails.routes"
+	},
+	"resources collection (rescb)": {
+		"prefix": "rescb",
+		"body": [
+			"resources :${1:res_name} do",
+				"collection do",
+					"$2",
+				"end",
+			"end"
+		],
 		"description": "resources with a custom collection block",
 		"scope": "meta.rails.routes"
 	},
 	"resources_member": {
 		"prefix": "res_member_block",
-		"body": "resources :${1:res_name} do\n  member do\n    ${2:get} :${3:action}\n  end\n\nend",
+		"body": [
+			"resources :${1:res_name} do",
+				"member do",
+					"$2",
+				"end",
+			"end"
+		],
+		"description": "resources with a custom member block",
+		"scope": "meta.rails.routes"
+	},
+	"resources_member (resmb)": {
+		"prefix": "resmb",
+		"body": [
+			"resources :${1:res_name} do",
+				"member do",
+					"$2",
+				"end",
+			"end"
+		],
 		"description": "resources with a custom member block",
 		"scope": "meta.rails.routes"
 	},
@@ -75,35 +125,113 @@
 	},
 	"resource_block": {
 		"prefix": "re_block",
-		"body": " :${1:res_name} do\n  $2\nend",
+		"body": [
+			"resource :${1:res_name} do",
+				"$2",
+			"end"
+		],
+		"description": "resource with an empty params block",
+		"scope": "meta.rails.routes"
+	},
+	"resource_block (reb)": {
+		"prefix": "reb",
+		"body": [
+			"resource :${1:res_name} do",
+				"$2",
+			"end"
+		],
 		"description": "resource with an empty params block",
 		"scope": "meta.rails.routes"
 	},
 	"resource_collection": {
 		"prefix": "re_collection_block",
-		"body": "resource :${1:res_name} do\n  collection do\n    ${2:get} :${3:action}\n  end\n\nend",
+		"body": [
+			"resource :${1:res_name} do",
+				"collection do",
+					"$2",
+				"end",
+			"end"
+		],
+		"description": "resource with a custom collection block",
+		"scope": "meta.rails.routes"
+	},
+	"resource_collection (recb)": {
+		"prefix": "recb",
+		"body": [
+			"resource :${1:res_name} do",
+				"collection do",
+					"$2",
+				"end",
+			"end"
+		],
 		"description": "resource with a custom collection block",
 		"scope": "meta.rails.routes"
 	},
 	"resource_member": {
 		"prefix": "re_member_block",
-		"body": "resource :${1:res_name} do\n  member do\n    ${2:get} :${3:action}\n  end\n\nend",
+		"body": [
+			"resource :${1:res_name} do",
+				"member do",
+					"$2",
+				"end",
+			"end"
+		],
+		"description": "resource with a custom member block",
+		"scope": "meta.rails.routes"
+	},
+	"resource_member (remb)": {
+		"prefix": "remb",
+		"body": [
+			"resource :${1:res_name} do",
+				"member do",
+					"$2",
+				"end",
+			"end"
+		],
 		"description": "resource with a custom member block",
 		"scope": "meta.rails.routes"
 	},
 	"member": {
 		"prefix": "member_block",
-		"body": "member do\n    ${2:get} :${3:action}\nend\n",
+		"body": [
+			"member do",
+				"$1",
+			"end"
+		],
+		"description": "member block",
+		"scope": "meta.rails.routes"
+	},
+	"member (mb)": {
+		"prefix": "mb",
+		"body": [
+			"member do",
+				"$1",
+			"end"
+		],
 		"description": "member block",
 		"scope": "meta.rails.routes"
 	},
 	"collection": {
 		"prefix": "collection_block",
-		"body": "collection do\n    ${2:get} :${3:action}\nend\n",
+		"body": [
+			"collection do",
+				"$1",
+			"end"
+		],
 		"description": "collection block",
 		"scope": "meta.rails.routes"
 	},
-	// redirect function
+	"collection (cb)": {
+		"prefix": "cb",
+		"body": [
+			"collection do",
+				"$1",
+			"end"
+		],
+		"description": "collection block",
+		"scope": "meta.rails.routes"
+	},
+	// redirect method
 	"render": {
 		"prefix": "render",
 		"body": "render ${path}",
@@ -360,13 +488,13 @@
 	},
 	"require": {
 		"prefix": "require",
-		"body": "require(:$1)$2",
+		"body": "require(:$1)",
 		"description": "require(:id)",
 		"scope": "source.ruby"
 	},
 	"permit": {
 		"prefix": "permit",
-		"body": "permit(:$1)$2",
+		"body": "permit(:$1)",
 		"description": "permit(:id)",
 		"scope": "source.ruby"
 	},
@@ -379,65 +507,125 @@
 	// Controller
 	"controller": {
 		"prefix": "controller",
-		"body": "class ${1:name}Controller < ApplicationController\n  $2\nend",
+		"body": [
+			"class ${1:name}Controller < ApplicationController",
+				"$2",
+			"end"
+		],
 		"description": "class Controller",
 		"scope": "source.ruby"
 	},
-	"index": {
-		"prefix": "index",
-		"body": "def index\n  $1\nend",
-		"description": "Function index",
+	"index_method": {
+		"prefix": "index_method",
+		"body": [
+			"def index",
+				"$1",
+			"end"
+		],
+		"description": "method index",
 		"scope": "source.ruby"
 	},
-	"create": {
-		"prefix": "create",
-		"body": "def create\n  $1\nend",
-		"description": "Function create",
+	"create_method": {
+		"prefix": "create_method",
+		"body": [
+			"def create",
+				"$1",
+			"end"
+		],
+		"description": "method create",
 		"scope": "source.ruby"
 	},
-	"new": {
-		"prefix": "new",
-		"body": "def new\n  $1\nend",
-		"description": "Function new",
+	"new_method": {
+		"prefix": "new_method",
+		"body": [
+			"def new",
+				"$1",
+			"end"
+		],
+		"description": "method new",
 		"scope": "source.ruby"
 	},
-	"edit": {
-		"prefix": "edit",
-		"body": "def edit\n  $1\nend",
-		"description": "Function edit",
+	"edit_method": {
+		"prefix": "edit_method",
+		"body": [
+			"def edit",
+				"$1",
+			"end"
+		],
+		"description": "method edit",
 		"scope": "source.ruby"
 	},
 	"show": {
-		"prefix": "show",
-		"body": "def show\n  $1\nend",
-		"description": "Function show",
+		"prefix": "show_method",
+		"body": [
+			"def show",
+				"$1",
+			"end"
+		],
+		"description": "method show",
 		"scope": "source.ruby"
 	},
 	"update": {
-		"prefix": "update",
-		"body": "def update\n  $1\nend",
-		"description": "Function update",
+		"prefix": "update_method",
+		"body": [
+			"def update",
+				"$1",
+			"end"
+		],
+		"description": "method update",
 		"scope": "source.ruby"
 	},
 	"destroy": {
-		"prefix": "destroy",
-		"body": "def destroy\n  $1\nend",
-		"description": "Function destroy",
+		"prefix": "destroy_method",
+		"body": [
+			"def destroy",
+				"$1",
+			"end"
+		],
+		"description": "method destroy",
 		"scope": "source.ruby"
 	},
 	"CRUD": {
 		"prefix": "CRUD",
-		"body": "def index\n  \nend\n\ndef new\n  \nend\n\ndef create\n  \nend\n\ndef edit\n  \nend\n\ndef update\n  \nend\n\ndef show\n  \nend\n\ndef destroy\n  \nend",
-		"description": "CRUD Function",
+		"body": [
+			"def index",
+				"",
+			"end",
+			"",
+			"def new",
+				"",
+			"end",
+			"",
+			"def create",
+				"",
+			"end",
+			"",
+			"def edit",
+				"",
+			"end",
+			"",
+			"def update",
+				"",
+			"end",
+			"",
+			"def show",
+				"",
+			"end",
+			"",
+			"def destroy",
+				"",
+			"end"
+		],
+		"description": "CRUD method",
 		"scope": "source.ruby"
 	},
-	"before_action(ba)": {
+	"before_action": {
 		"prefix": "before_action",
 		"body": "before_action :${1:id}",
 		"description": "before action",
 		"scope": "source.ruby"
 	},
-	"before_action": {
+	"before_action (ba)": {
 		"prefix": "ba",
 		"body": "before_action :${1:id}",
 		"description": "before action",
@@ -446,31 +634,59 @@
 	// Other
 	"do": {
 		"prefix": "do",
-		"body": "do\n  $2\nend",
+		"body": [
+			"do",
+				"$2",
+			"end"
+		],
 		"description": "do block",
 		"scope": "source.ruby"
 	},
 	"if": {
 		"prefix": "if",
-		"body": "if $1 \n  $2\nend",
+		"body": [
+			"if $1 ",
+				"$2",
+			"end"
+		],
 		"description": "if block",
 		"scope": "source.ruby"
 	},
 	"if else": {
 		"prefix": "if else",
-		"body": "if $1\n  $2\nelse\n  $3\nend",
+		"body": [
+			"if $1",
+				"$2",
+			"else",
+				"$3",
+			"end"
+		],
 		"description": "if else block",
 		"scope": "source.ruby"
 	},
 	"if elsif": {
 		"prefix": "if elsif",
-		"body": "if $1\n  $2\nelsif $3\n  $4\nend",
+		"body": [
+			"if $1",
+				"$2",
+			"elsif $3",
+				"$4",
+			"end"
+		],
 		"description": "if elsif block",
 		"scope": "source.ruby"
 	},
 	"if elsif else": {
 		"prefix": "if elsif else",
-		"body": "if $1\n  $2\nelsif $3\n  $4\nelse\n  $5\nend",
+		"body": [
+			"if $1",
+				"$2",
+			"elsif $3",
+				"$4",
+			"else",
+				"$5",
+			"end"
+		],
 		"description": "if elsif else block",
 		"scope": "source.ruby"
 	},
@@ -482,6 +698,12 @@
 	},
 	"find_by": {
 		"prefix": "find_by",
+		"body": "find_by(${1:key}: ${2:value})",
+		"description": "find_by(key: value)",
+		"scope": "source.ruby"
+	},
+	"find_by_params": {
+		"prefix": "find_by_params",
 		"body": "find_by(${1:id_name}: params[:${2:param}])",
 		"description": "find_by(id_name: params[:param])",
 		"scope": "source.ruby"
@@ -500,8 +722,8 @@
 	},
 	"order": {
 		"prefix": "order",
-		"body": "order(${1:id}: :${2:desc})",
-		"description": "order(id: :desc)",
+		"body": "order(${1:column}: :${2:desc})",
+		"description": "order(column: :desc)",
 		"scope": "source.ruby"
 	},
 	"limit": {
@@ -512,8 +734,22 @@
 	},
 	"def": {
 		"prefix": "def",
-		"body": "def ${1:name}\n  $2\nend",
+		"body": [
+			"def ${1:name}",
+				"$2",
+			"end"
+		],
 		"description": "def",
+		"scope": "source.ruby"
+	},
+	"def (dm)": {
+		"prefix": "dm",
+		"body": [
+			"def ${1:name}",
+				"$2",
+			"end"
+		],
+		"description": "def method",
 		"scope": "source.ruby"
 	}
 }

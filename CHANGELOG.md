@@ -1,4 +1,6 @@
 # Change log
+## 0.4.4
+- Fix syntax of ruby snippet
 ## 0.4.3
 - Test Slim snippets
 ## 0.4.2
