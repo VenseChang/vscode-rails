@@ -1,4 +1,6 @@
 # Change log
+## 0.4.2
+- fix template name from html to erb
 ## 0.4.1
 - fix member and collection space problem
 ## 0.4.0

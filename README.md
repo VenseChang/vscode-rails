@@ -1,13 +1,6 @@
 # Rails Snippets 
 
-***If have any advice,can through [GitHub](https://github.com/Drunces/vscode-rails) or send mail to  me.***
-## Mail : vense1023@gmail.com
-> Mail title prefix： [VSCode Extension - Rails Snippets]  
-> title example: [VSCode Extension - Rails Snippets] xxxxxxxxxx
-
-# Snippets
-- [Rails](https://hackmd.io/AwZhE4FMFYA5gLQEMQHZYICwDNqQQEaqSoLwDG05kATLAGw0HhA=)
-- [Ruby](https://hackmd.io/EwNgpgxghgzGBmBaArATgAzsQFhPJqUAjFIugOwzIAm5R51mMQA=)
+***If have any advice,use [GitHub Issue](https://github.com/VenseChang/vscode-rails/issues) or <a href="mailto:vense1023@gmail.com?subject=[VSCode Extension%20-%20Rails%20Snippets]%20">mail</a> to  me.***
 
 # Link
 - [GitHub](https://github.com/Drunces/vscode-rails)
@@ -15,3 +8,5 @@
 
 ---
 ### Enjoy it!
+
+
