@@ -30,7 +30,7 @@
 	"each":{
 		"prefix": "each",
 		"body": [
-			"<% ${1:id}.each do |${2:variable}| %>",
+			"<% ${1:variable}.each do |${2:loop_variable}| %>",
 			  "$3",
 			"<% end %>"
 		],
@@ -39,7 +39,7 @@
 	"form_for":{
 		"prefix": "form_for",
 		"body": [
-			"<%= form_for ${1:variable} do |f| %>",
+			"<%= form_for ${1:variable} do |${2:f}| %>",
 			  "$2",
 			"<% end %>"
 		],
@@ -48,8 +48,8 @@
 	"simple_form_for":{
 		"prefix": "simple_form_for",
 		"body": [
-			"<%= simple_form_for ${1:variable} do |f| %>",
-			  "$2",
+			"<%= simple_form_for ${1:variable} do |${2:f}| %>",
+			  "$3",
 			"<% end %>"
 		],
 		"description": "rails simple_form_for"
@@ -57,14 +57,14 @@
   "time_zone_select":{
 		"prefix": "time_zone_select",
 		"body": [
-			"<%= f.time_zone_select :${id_name} %>"
+			"<%= f.time_zone_select :${column_name} %>"
 		],
 		"description": "rails time_zone_select"
   },
 	"range_field":{
 		"prefix": "range_field",
 		"body": [
-			"<%= range_field (:${model_name}, :${id_name}, in: ${1..100}) %>"
+			"<%= range_field (:${model_name}, :${column_name}, in: ${1..100}) %>"
 		],
 		"description": "rails range_field"
 	},

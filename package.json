@@ -1,7 +1,7 @@
 {
 	"name": "rails-snippets",
 	"displayName": "Rails Snippets",
-	"version": "0.4.2",
+	"version": "0.4.3",
 	"description": "Ruby on Rails Snippets",
 	"icon": "rails.png",
 	"publisher": "Vense",
@@ -25,10 +25,15 @@
 		"ROR",
 		"RoR",
 		"Ruby on Rails",
-		"erb"
+		"erb",
+		"slim"
 	],
 	"contributes": {
 		"snippets": [
+			{
+				"language": "slim",
+				"path": "./snippets/slim.json"
+			},
 			{
 				"language": "erb",
 				"path": "./snippets/erb.json"
@@ -46,6 +51,15 @@
 				],
 				"extensions": [
 					".html.erb"
+				]
+			},
+			{
+				"id": "slim",
+				"aliases": [
+					"html.slim"
+				],
+				"extensions": [
+					".html.slim"
 				]
 			}
 		],
