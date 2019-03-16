@@ -30,8 +30,8 @@
 	"contributes": {
 		"snippets": [
 			{
-				"language": "html",
-				"path": "./snippets/html.json"
+				"language": "erb",
+				"path": "./snippets/erb.json"
 			},
 			{
 				"language": "ruby",
@@ -40,7 +40,7 @@
 		],
 		"languages": [
 			{
-				"id": "html",
+				"id": "erb",
 				"aliases": [
 					"html.erb"
 				],
@@ -51,7 +51,7 @@
 		],
 		"grammars": [
 			{
-				"language": "html",
+				"language": "erb",
 				"scopeName": "text.html.erb",
 				"path": "./syntaxes/erb.tmLanguage"
 			}
