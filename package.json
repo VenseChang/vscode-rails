@@ -1,7 +1,7 @@
 {
 	"name": "rails-snippets",
 	"displayName": "Rails Snippets",
-	"version": "0.4.5",
+	"version": "0.5.0",
 	"description": "Ruby on Rails Snippets",
 	"icon": "rails.png",
 	"publisher": "Vense",
@@ -35,7 +35,7 @@
 				"path": "./snippets/slim.json"
 			},
 			{
-				"language": "html",
+				"language": "erb",
 				"path": "./snippets/erb.json"
 			},
 			{
@@ -45,28 +45,28 @@
 		],
 		"languages": [
 			{
-				"id": "html",
+				"id": "erb",
 				"aliases": [
-					"html.erb"
+					"erb"
 				],
 				"extensions": [
-					".html.erb"
+					".erb"
 				]
 			},
 			{
 				"id": "slim",
 				"aliases": [
-					"html.slim"
+					".slim"
 				],
 				"extensions": [
-					".html.slim"
+					".slim"
 				]
 			}
 		],
 		"grammars": [
 			{
-				"language": "html",
-				"scopeName": "text.html.erb",
+				"language": "erb",
+				"scopeName": "text.erb",
 				"path": "./syntaxes/erb.tmLanguage"
 			}
 		]

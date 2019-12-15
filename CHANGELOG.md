@@ -1,4 +1,6 @@
 # Change log
+## 0.5.0
+- Fix extension removes the original HTML language support
 ## 0.4.4
 - Fix syntax of ruby snippet
 ## 0.4.3
@@ -33,7 +35,7 @@
 - add dependent snippet
 - change CRUD sort
 ## 0.3.0
-- remove functions with only syntax 
+- remove functions with only syntax
   - lile: resource_only
 - add only & except function
 - add add_reference function
