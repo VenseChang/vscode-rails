@@ -198,42 +198,42 @@
 	"render":{
 		"prefix": "render",
 		"body": [
-			"<%= render  \"${path}\" %>"
+			"<%= render \"${path}\" %>"
 		],
 		"description": "rails render"
 	},
 	"render_variable":{
 		"prefix": "render_variable",
 		"body": [
-			"<%= render  \"${path}\", ${variable1}: ${variable2} %>"
+			"<%= render \"${path}\", ${variable1}: ${variable2} %>"
 		],
 		"description": "rails render variable"
 	},
 	"link_to(lito)":{
 		"prefix": "link_to",
 		"body": [
-			"<%= link_to  \"${text}\", ${path} %>"
+			"<%= link_to \"${text}\", ${path} %>"
 		],
 		"description": "rails link_to"
 	},
 	"link_to":{
 		"prefix": "lito",
 		"body": [
-			"<%= link_to  \"${text}\", ${path} %>"
+			"<%= link_to \"${text}\", ${path} %>"
 		],
 		"description": "rails link_to"
 	},
 	"link_to class(litoc)":{
 		"prefix": "link_to_class",
 		"body": [
-			"<%= link_to  \"${1:text}\", ${2:path}, class:\"${3:class}\" %>"
+			"<%= link_to \"${1:text}\", ${2:path}, class:\"${3:class}\" %>"
 		],
 		"description": "rails link_to"
 	},
 	"link_to class":{
 		"prefix": "litoc",
 		"body": [
-			"<%= link_to  \"${1:text}\", ${2:path}, class:\"${3:class}\" %>"
+			"<%= link_to \"${1:text}\", ${2:path}, class:\"${3:class}\" %>"
 		],
 		"description": "rails link_to"
 	},
